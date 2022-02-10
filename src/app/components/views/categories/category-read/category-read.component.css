@@ -12,8 +12,30 @@
     font-size: 2rem;
 }
 
+.button-new-category{
+    margin-bottom: .8rem;
+    color: green;
+}
+
 .table{
     width: 100%;
     
 
+}
+
+.edit{
+color: white;
+}
+
+.delete{
+color:rgb(199, 66, 66);
+margin-left: .5rem;
+}
+
+.mat-header{
+    width: 5rem;
+}
+
+.books{
+    color: white;
 }

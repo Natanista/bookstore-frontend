@@ -11,6 +11,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 
+import {MatButtonModule} from '@angular/material/button'; 
+
 import {MatListModule} from '@angular/material/list'; 
 import {MatIconModule} from '@angular/material/icon';
 import { NavComponent } from './components/template/nav/nav.component'; 
@@ -20,6 +22,16 @@ import { CategoryReadComponent } from './components/views/categories/category-re
 
 import {MatTableModule} from '@angular/material/table'; 
 import { HttpClientModule } from '@angular/common/http';
+import { CategoryCreateComponent } from './components/views/categories/category-create/category-create.component';
+
+import { FormsModule } from '@angular/forms';
+
+import {MatInputModule} from '@angular/material/input'; 
+
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { CategoryDeleteComponent } from './components/views/categories/category-delete/category-delete.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +40,9 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    CategoryReadComponent
+    CategoryReadComponent,
+    CategoryCreateComponent,
+    CategoryDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +54,13 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatCardModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSnackBarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
